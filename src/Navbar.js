@@ -3,6 +3,7 @@ import hamburger from "./images/icon-hamburger.svg"
 import close from "./images/icon-close.svg"
 import moblieNav from './images/bg-pattern-mobile-nav.svg'
 
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -11,8 +12,8 @@ const Navbar = () => {
   }
 
   return ( 
-    <div className="w-full sm:w-5/6 sm:m-auto ">
-      <div className="relative flex justify-between ">
+    <header className="">
+      <div className="relative flex justify-between w-full sm:w-5/6 sm:m-auto ">
         <span><h1 className="my-3 mx-5">INSURE</h1> </span>
         <span className="block sm:hidden"> 
           <img src={hamburger} alt="" className={`mx-5 my-3 ${navbarOpen ? "hidden": "block"}`} onClick={open}/>
@@ -41,7 +42,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
    );
 }
  
