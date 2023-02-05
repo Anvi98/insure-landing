@@ -12,6 +12,10 @@ module.exports = {
         'dark-grayish-violet': 'hsl(273, 4%, 51%)',
         'very-light-gray': 'hsl(0, 0%, 98%)'
       },
+      screens: {
+        'sm': '668px',
+        // => @media (min-width: 992px) { ... }
+      },
     },
   },
   plugins: [],
